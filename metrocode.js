@@ -114,7 +114,7 @@ window.AudioContext = window.AudioContext||window.webkitAudioContext;
 context = new AudioContext();
 
 
-
+/*
 
 function playSound(buffer,time) {
   var source = context.createBufferSource(); // creates a sound source
@@ -123,7 +123,7 @@ function playSound(buffer,time) {
   source.start(time);                           // play the source now
                                              // note: on older systems, may have to use deprecated noteOn(time);
 }
-
+*/
 
 function playSound(buffer,time) {return};
 
