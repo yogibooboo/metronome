@@ -9,7 +9,6 @@
         <!-- versionCode is optional and Android only -->
 
         <preference name="phonegap-version" value="3.6.3" />
-	<gap:platform name="android" />
 
         <name>Sample metronome</name>
 
