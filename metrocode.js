@@ -21,7 +21,7 @@ log.enabled = true;
 /*$('#bstart').click(function () {
 	tmidi.startstop();
 });
-
+*/
 
 $('#canvasmetronomo').mousedown(function (ev) {
 	tmidi.metronomodown(ev);
@@ -56,7 +56,7 @@ $('#canvasimposta').mouseup(function (ev) {
 	tmidi.impostaup(ev);
 });
 
-
+/*
 document.addEventListener("keydown", keyDownTextField, false);
 
  function keyDownTextField(ev){    
