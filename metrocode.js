@@ -106,7 +106,7 @@ tmnoaudio=new Image();
 tmnoaudio.src="images/metronome/noaudiog.png";
 
 var buffers={};
-
+/*
 var context;
 
 
@@ -114,7 +114,7 @@ window.AudioContext = window.AudioContext||window.webkitAudioContext;
 context = new AudioContext();
 
 
-/*
+
 
 function playSound(buffer,time) {
   var source = context.createBufferSource(); // creates a sound source
