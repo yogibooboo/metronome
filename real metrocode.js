@@ -13,11 +13,6 @@ $(window).resize(function () {
 });
 
 
-var reader = new FileReader();
-
-reader.onload = function(e) {
-  var rawData = reader.result;
-}
 
 
 $("#wc").hide()

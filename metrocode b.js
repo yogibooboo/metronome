@@ -17,25 +17,3 @@ tmmetronomo.src="images/metronome.png";
 b.fillStyle="#FFFFFF";
 b.fillRect(0,0,50,50);
 b.drawImage(tmmetronomo, 0, 0,375,750);
-
-var tmidi = {
-    
-
-	
-	
-    start:function(){
-    	
-    	b.fillStyle="#FFFFFF";
-	b.fillRect(0,0,50,50);
-	b.drawImage(tmmetronomo, 0, 0,375,750);
-        return;
-    },
-
-}  //tmidi
-
-
-$(document) .ready(function () {
-
-    setTimeout(tmidi.start,500);
-
-}); 
