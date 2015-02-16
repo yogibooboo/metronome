@@ -106,14 +106,14 @@ tmnoaudio=new Image();
 tmnoaudio.src="images/metronome/noaudiog.png";
 
 var buffers={};
-/*
-var context;
+
+var metrocontext;
 
 
 window.AudioContext = window.AudioContext||window.webkitAudioContext;
-context = new AudioContext();
+metrocontext = new AudioContext();
 
-
+/*
 
 
 function playSound(buffer,time) {
