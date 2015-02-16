@@ -106,7 +106,7 @@ tmnoaudio=new Image();
 tmnoaudio.src="images/metronome/noaudiog.png";
 
 var buffers={};
-/*
+
 var context;
 
 
@@ -124,7 +124,7 @@ function playSound(buffer,time) {
                                              // note: on older systems, may have to use deprecated noteOn(time);
 }
 
-*/
+
 function playSound(buffer,time) {return};
 
 var buflen = 1024;
