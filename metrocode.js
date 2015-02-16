@@ -18,7 +18,7 @@ log.enabled = true;
 //$("#wc").hide()
 //var vediwc=false;
 
-$('#bstart').click(function () {
+/*$('#bstart').click(function () {
 	tmidi.startstop();
 });
 
@@ -66,9 +66,14 @@ document.addEventListener("keydown", keyDownTextField, false);
  	if (ev.keyCode==40) return tmidi.setbpm(tmidi.bpm+1)
  }
 
+*/
 
-var active_element;
-var current_in;
+$('#bstart').click(function () {
+	  	$("#bstart").css({"border-color":"blue"});
+   		$("#bstart").text("FATTO");
+
+
+});
 var msg;
 var sel;
 
@@ -101,7 +106,7 @@ tmnoaudio=new Image();
 tmnoaudio.src="images/metronome/noaudiog.png";
 
 var buffers={};
-
+/*
 var context;
 
 
@@ -119,9 +124,9 @@ function playSound(buffer,time) {
                                              // note: on older systems, may have to use deprecated noteOn(time);
 }
 
+*/
+function playSound(buffer,time) {return};
 
-var rafID = null;
-var tracks = null;
 var buflen = 1024;
 //var buf = new Float32Array( buflen );
 var buf = new Uint8Array( buflen );
@@ -136,7 +141,7 @@ var tmidi = {
     	
     	tmidi.inizializzazioni();
     	tmidi.resetgrafici();
-    	window.requestAnimationFrame(tmidi.refresh);
+/*    	window.requestAnimationFrame(tmidi.refresh);
     	tmidi.readfile("sounds/tick.wav","tickbuffer");
     	tmidi.readfile("sounds/tack.wav","tackbuffer");
     	tmidi.readfile("sounds/teck.wav","teckbuffer");
@@ -145,19 +150,19 @@ var tmidi = {
     		tmidi.readfile("sounds/"+i+".wav",i+"buffer");
     		tmidi.readfile("sounds/"+i+"-8.wav",i+"-8buffer");
      	}
-
+*/
         return;
     },
 
    
-	filemidi:[],
-	
 
 	
 
+	
 
 
 
+/*
 
 	readfile:function (url,buff) {
 
@@ -176,7 +181,7 @@ var tmidi = {
 	},
 
 
-
+*/
 
 
     resetgrafici:function(){
@@ -196,7 +201,7 @@ var tmidi = {
 		var angolo=0;
 		var cursore=-100-300*((120-tmidi.bpm)/80);
 		//log ("cursore= "+cursore)
-		var tempo=context.currentTime;
+		//var tempo=context.currentTime;
 
 		b.setTransform(1, 0, 0, 1, 0, 0);		
 		b.clearRect(0, 0, w,h);
@@ -506,7 +511,7 @@ var tmidi = {
 		var zden=tmidi.metrica[tmidi.metricasel].den,znum=tmidi.metrica[tmidi.metricasel].num;
 
 		var angolo=0;
-		var tempo=context.currentTime;
+		//var tempo=context.currentTime;
 
 		
 
@@ -803,7 +808,7 @@ var tmidi = {
 			waveCanvas.stroke();
 			waveCanvas.font="14px Verdana";
 			waveCanvas.fillStyle = "white";
-			waveCanvas.fillText("posmax= "+posmax+" max= "+max+"sum= "+average/512,100,100);
+			waveCanvas.fillText("posmax= "+posmax+" max= "+max+"sum= "+average/512,100,100);*/
 			
     },
 
@@ -814,15 +819,11 @@ var tmidi = {
 			if ((tmidi.fsuona||tmidi.fpoststop)) tmidi.initimposta(ctxim,canvasimposta.width,canvasimposta.height,true); //solo indice
 
 		tmidi.updatepitch();
-    	window.requestAnimationFrame(tmidi.refresh);	*/
+    	window.requestAnimationFrame(tmidi.refresh);	
     },
 
 
 
-    midiout : function(a,b,c){
-    	Jazz.MidiOut(a,b,c);	
-
-    },
 
 	
 
@@ -968,7 +969,7 @@ var tmidi = {
 		tmidi.fintro=false;
 		tmidi.fpreintro=false;
 		tmidi.fcancellasuona=false;
-		tmidi.inizio=context.currentTime;
+		//tmidi.inizio=context.currentTime;
 		tmidi.prev=tmidi.inizio;
 		tmidi.next=tmidi.inizio;
     	tmidi.fmicrofono=false;
