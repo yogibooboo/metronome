@@ -86,8 +86,8 @@ var sel;
   canvasimposta = document.getElementById("canvasimposta");
   ctxim = canvasimposta.getContext('2d');
 
-  wc = document.getElementById("wc");
-  waveCanvas = wc.getContext('2d');
+  //wc = document.getElementById("wc");
+  //waveCanvas = wc.getContext('2d');
 
 
 tmchiavi=new Image();
